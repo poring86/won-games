@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client'
 
 import React, { useState } from 'react'
@@ -15,6 +16,7 @@ export default function StyledComponentsRegistry({
 
   useServerInsertedHTML(() => {
     const styles = styledComponentsStyleSheet.getStyleElement()
+    // @ts-ignore
     styledComponentsStyleSheet.instance.clearTag()
     return <>{styles}</>
   })
@@ -22,6 +24,7 @@ export default function StyledComponentsRegistry({
   if (typeof window !== 'undefined') return <>{children}</>
 
   return (
+    // @ts-ignore
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
       {children}
     </StyleSheetManager>
