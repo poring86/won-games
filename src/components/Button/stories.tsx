@@ -38,3 +38,12 @@ asLink.args = {
   children: 'Buy now',
   href: '/link'
 }
+
+export const minimal: StoryFn = (args) => <Button {...args} />
+
+minimal.args = {
+  size: 'large',
+  as: 'a',
+  children: 'Buy now',
+  minimal: true
+}
