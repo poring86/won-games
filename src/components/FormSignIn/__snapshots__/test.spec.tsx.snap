@@ -213,9 +213,7 @@ exports[`<FormSignIn /> should render the form 1`] = `
           <a
             href="/sign-up"
           >
-            <a>
-              Sign up
-            </a>
+            Sign up
           </a>
         </div>
       </form>
