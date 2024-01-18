@@ -1,3 +1,5 @@
+'use client'
+
 import { Email, Lock } from '@styled-icons/material-outlined'
 import * as S from './styles'
 import TextField from 'components/TextField'
